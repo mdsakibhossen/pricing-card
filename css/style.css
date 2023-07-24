@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.text p:first-child {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.text p:last-child {
+    width: 70%;
+    margin: 0 auto;
+    font-size: .9rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.card .card-header {
+    background-color: #3F28AB;
+    color: #fff;
+    padding: 1rem 1.5rem 4rem 1.5rem;
+    font-size: .9rem;
+    border-radius: .8rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.card .card-header .price span:first-child {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.card .card-body {
+    padding: 1rem;
+    box-shadow: 0px 0px 3px 0px #ddd;
+    border-radius: .8rem;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2rem;
+    background-color: #fff;
+
+}
+
+.card .card-body .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 3px 0px #ddd;
+    color: #3F28AB;
+    border-radius: .5rem;
+    position: relative;
+    left: 0;
+    top: -2rem;
+    background-color: #fff;
+
+}
+
+.card .card-body ul {
+    list-style: none;
+}
+
+.card .card-body ul li {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.card .card-body ul li span:first-child {
+    display: inline-block;
+    margin-right: .5rem;
+    color: #42D14A;
+}
+
+.card .card-body .btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    text-decoration: none;
+    color: #3F28AB;
+    border: .1rem solid #3F28AB;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.card .card-body .btn:hover {
+    background-color: #3F28AB;
+    color: #FFF;
+}
+
+/* Media Queries Start */
+@media screen and (max-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .text p:last-child {
+        width: 100%;
+    }
+}
+
+/* Media Queries End */
